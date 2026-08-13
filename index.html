@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Priya 🌙✨</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Great+Vibes&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ambient night sky background -->
+<div class="sky" id="sky"></div>
+<div class="petals" id="petals"></div>
+
+<!-- Progress dots (shown only after unlock) -->
+<nav class="progress" id="progress" aria-hidden="true"></nav>
+
+<main id="app">
+
+  <!-- PAGE 0 : GARDEN GATE / LOCK SCREEN -->
+  <section class="page active" data-page="lock" id="page-lock">
+    <div class="card gate-card">
+      <div class="gate-emblem">🔒</div>
+      <p class="eyebrow">a private garden</p>
+      <h1 class="script-heading">The Gate is Locked</h1>
+      <p class="body-text">Only one person may enter here.<br>Prove it's you, Priya — enter your birthdate to open the gate.</p>
+
+      <form id="gate-form" class="gate-form" autocomplete="off">
+        <input type="date" id="birthdate-input" required aria-label="Enter your birthdate">
+        <button type="submit" class="btn btn-primary">
+          <span>Unlock the Garden</span>
+        </button>
+      </form>
+      <p class="gate-error" id="gate-error" role="alert"></p>
+      <p class="gate-hint">hint: it's the day the world got lucky 🌷</p>
+    </div>
+  </section>
+
+  <!-- PAGE 1 : WELCOME -->
+  <section class="page" data-page="welcome" id="page-welcome">
+    <div class="card">
+      <p class="eyebrow">the gate creaks open&hellip;</p>
+      <h1 class="script-heading">Welcome, Priya</h1>
+      <p class="body-text">
+        Somewhere between an ordinary calendar and a very extraordinary person,
+        there's a date that changed things for the better — and it's today.
+        I built you a small corner of the internet just for this.
+      </p>
+      <p class="body-text subtle">Take your time. There's a few stops before the cake.</p>
+      <button class="btn btn-primary next-btn">
+        <span>Step Inside</span> <i class="arrow">→</i>
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 2 : REASONS / WHY YOU'RE SPECIAL -->
+  <section class="page" data-page="reasons" id="page-reasons">
+    <div class="card wide-card">
+      <p class="eyebrow">a short, incomplete list</p>
+      <h2 class="section-heading">Reasons This Day Matters</h2>
+      <ul class="reasons-list">
+        <li>
+          <span class="reason-mark">✦</span>
+          <div><strong>You make ordinary days feel like plans worth keeping.</strong>
+          <p>A random Tuesday becomes something people remember, just because you were in it.</p></div>
+        </li>
+        <li>
+          <span class="reason-mark">✦</span>
+          <div><strong>Your kindness is quiet but it travels far.</strong>
+          <p>People carry the small things you do for them longer than you'd ever guess.</p></div>
+        </li>
+        <li>
+          <span class="reason-mark">✦</span>
+          <div><strong>You laugh with your whole self.</strong>
+          <p>And somehow it makes everyone in the room braver about laughing too.</p></div>
+        </li>
+        <li>
+          <span class="reason-mark">✦</span>
+          <div><strong>You keep growing, and you let people watch.</strong>
+          <p>That takes more courage than most people realize.</p></div>
+        </li>
+        <li>
+          <span class="reason-mark">✦</span>
+          <div><strong>Simply: the world is better calibrated with you in it.</strong>
+          <p>No further explanation needed.</p></div>
+        </li>
+      </ul>
+      <button class="btn btn-primary next-btn">
+        <span>See Some Memories</span> <i class="arrow">→</i>
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 3 : MEMORIES / PHOTO GALLERY -->
+  <section class="page" data-page="memories" id="page-memories">
+    <div class="card wide-card">
+      <p class="eyebrow">a little photo album</p>
+      <h2 class="section-heading">Moments Worth Keeping</h2>
+      <p class="body-text subtle center">
+        Drop your favourite photos into the <code>/images</code> folder, named
+        <code>memory1.jpg</code> through <code>memory6.jpg</code>, and they'll appear right here.
+      </p>
+
+      <div class="gallery">
+        <figure class="photo-slot">
+          <img src="images/memory1.jpg" alt="Memory one" onerror="this.parentElement.classList.add('empty'); this.remove();">
+          <figcaption contenteditable="true" spellcheck="false">that one perfect day ✨</figcaption>
+        </figure>
+        <figure class="photo-slot">
+          <img src="images/memory2.jpg" alt="Memory two" onerror="this.parentElement.classList.add('empty'); this.remove();">
+          <figcaption contenteditable="true" spellcheck="false">us, being ridiculous</figcaption>
+        </figure>
+        <figure class="photo-slot">
+          <img src="images/memory3.jpg" alt="Memory three" onerror="this.parentElement.classList.add('empty'); this.remove();">
+          <figcaption contenteditable="true" spellcheck="false">the trip we still talk about</figcaption>
+        </figure>
+        <figure class="photo-slot">
+          <img src="images/memory4.jpg" alt="Memory four" onerror="this.parentElement.classList.add('empty'); this.remove();">
+          <figcaption contenteditable="true" spellcheck="false">celebration, take one</figcaption>
+        </figure>
+        <figure class="photo-slot">
+          <img src="images/memory5.jpg" alt="Memory five" onerror="this.parentElement.classList.add('empty'); this.remove();">
+          <figcaption contenteditable="true" spellcheck="false">the candid no one posed for</figcaption>
+        </figure>
+        <figure class="photo-slot">
+          <img src="images/memory6.jpg" alt="Memory six" onerror="this.parentElement.classList.add('empty'); this.remove();">
+          <figcaption contenteditable="true" spellcheck="false">your favourite (add it!)</figcaption>
+        </figure>
+      </div>
+
+      <button class="btn btn-primary next-btn">
+        <span>Read Some Wishes</span> <i class="arrow">→</i>
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 4 : WISHES CAROUSEL -->
+  <section class="page" data-page="wishes" id="page-wishes">
+    <div class="card wide-card">
+      <p class="eyebrow">whispers from the garden</p>
+      <h2 class="section-heading">A Few Wishes For You</h2>
+
+      <div class="wish-carousel">
+        <button class="wish-arrow" id="wish-prev" aria-label="Previous wish">‹</button>
+        <div class="wish-viewport">
+          <div class="wish-track" id="wish-track">
+            <blockquote class="wish-slide">May this year hand you exactly the kind of adventures you didn't plan for, but needed.</blockquote>
+            <blockquote class="wish-slide">May you keep choosing yourself as gently as you choose everyone else.</blockquote>
+            <blockquote class="wish-slide">May your coffee stay warm, your playlists stay perfect, and your people stay close.</blockquote>
+            <blockquote class="wish-slide">May the next chapter be softer where it needs to be soft, and braver where it needs to be brave.</blockquote>
+            <blockquote class="wish-slide">And most of all — happy, happy birthday. You deserve every bit of today.</blockquote>
+          </div>
+        </div>
+        <button class="wish-arrow" id="wish-next" aria-label="Next wish">›</button>
+      </div>
+      <div class="wish-dots" id="wish-dots"></div>
+
+      <button class="btn btn-primary next-btn">
+        <span>Okay, Bring the Cake</span> <i class="arrow">→</i>
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 5 : CAKE / BLOW CANDLE -->
+  <section class="page" data-page="cake" id="page-cake">
+    <div class="card">
+      <p class="eyebrow">make it count</p>
+      <h2 class="section-heading">Make A Wish</h2>
+      <p class="body-text subtle center">Tap the candle to blow it out.</p>
+
+      <div class="cake-scene" id="cake-scene">
+        <div class="candle-flame" id="candle-flame" title="Blow out the candle"></div>
+        <div class="candle"></div>
+        <div class="cake-top"></div>
+        <div class="cake-drip"></div>
+        <div class="cake-body">
+          <span class="sprinkle s1"></span><span class="sprinkle s2"></span>
+          <span class="sprinkle s3"></span><span class="sprinkle s4"></span>
+          <span class="sprinkle s5"></span><span class="sprinkle s6"></span>
+        </div>
+        <div class="cake-plate"></div>
+      </div>
+
+      <p class="cake-msg" id="cake-msg">&nbsp;</p>
+      <button class="btn btn-primary next-btn" id="cake-next" disabled>
+        <span>Open Your Card</span> <i class="arrow">→</i>
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 6 : FINALE -->
+  <section class="page" data-page="finale" id="page-finale">
+    <div class="card finale-card">
+      <p class="eyebrow">from me, to you</p>
+      <h1 class="script-heading huge">Happy Birthday, Priya</h1>
+      <p class="body-text">
+        Here's to another year of being exactly, unapologetically you.
+        Thank you for existing so loudly and so kindly in this world —
+        it's a better place for it, and so am I.
+      </p>
+      <p class="signoff">with all the love in the garden, always. 🌙</p>
+      <button class="btn btn-primary" id="replay-btn">
+        <span>Celebrate Again</span> ↺
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<div class="burst-layer" id="burst-layer"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
