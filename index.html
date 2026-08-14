@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For Priya 💖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loginPage" class="page active">
+  <div class="glow"></div>
+  <div class="card login-card">
+    <div class="mini-heart">♡</div>
+    <p class="eyebrow">A little secret awaits...</p>
+    <h1>Hey, <span>Priya</span> 💖</h1>
+    <p class="sub">This little world was made especially for you.<br>But first, I need to know if you're really Priya.</p>
+    <label for="birthday">Enter your birthday</label>
+    <input id="birthday" type="date" min="2004-08-13" max="2004-08-13" value="2004-08-13">
+    <button class="btn" id="loginBtn">Unlock My Surprise 🔐</button>
+    <p id="loginError" class="error"></p>
+    <p class="hint">Hint: It's a very special day. 🎂</p>
+  </div>
+</div>
+
+<section class="page" id="welcomePage"><div class="card content-card">
+<p class="eyebrow">Access granted ✨</p><div class="big-emoji">🎉</div>
+<h2>Welcome, <span>Priya!</span></h2>
+<p>Okay... you made it in. Now the actual surprise begins.</p>
+<p class="soft">Every button from here comes with a little celebration. Because birthdays should never be boring.</p>
+<button class="btn next" data-next="messagePage">Let's Begin 💫</button>
+</div></section>
+
+<section class="page" id="messagePage"><div class="card content-card wide">
+<p class="eyebrow">A message just for you · 01</p><h2>Dear <span>Priya,</span></h2>
+<div class="message">
+<p>Today is your day, and I hope you know just how special you are.</p>
+<p>Some people make life brighter simply by being themselves. You have that kind of presence — the kind that turns normal moments into memories.</p>
+<p>So today, forget the ordinary for a little while. Smile a little bigger. Laugh a little louder. Make a wish that feels almost impossible.</p>
+<p>You deserve a year full of beautiful surprises, genuine happiness, crazy adventures, peaceful moments, and people who make you feel truly valued.</p>
+<p class="script">Keep shining, Priya. ♡</p>
+</div>
+<button class="btn next" data-next="reasonsPage">Next Surprise →</button>
+</div></section>
+
+<section class="page" id="reasonsPage"><div class="card content-card wide">
+<p class="eyebrow">Just a few reasons · 02</p><h2>Why you're <span>special</span> ✨</h2>
+<div class="reason-grid">
+<div class="reason"><b>01</b><strong>Your smile</strong><p>It can make even an ordinary day feel a little better.</p></div>
+<div class="reason"><b>02</b><strong>Your heart</strong><p>You have a warmth that people remember.</p></div>
+<div class="reason"><b>03</b><strong>Your energy</strong><p>You bring your own kind of magic wherever you go.</p></div>
+<div class="reason"><b>04</b><strong>Simply you</strong><p>You don't have to be anyone else. You are already enough.</p></div>
+</div>
+<button class="btn next" data-next="wishPage">I Have a Wish for You ✨</button>
+</div></section>
+
+<section class="page" id="wishPage"><div class="card content-card">
+<p class="eyebrow">Your wish · 03</p><div class="big-emoji">🎂</div><h2>Make a <span>Wish</span></h2>
+<p>Close your eyes and think of something you really want.</p>
+<button class="btn" id="wishBtn">Make My Wish ✨</button>
+<p id="wishText" class="wish-text"></p>
+<button class="text-next next hidden" data-next="memoriesPage">I Made My Wish →</button>
+</div></section>
+
+<section class="page" id="memoriesPage"><div class="card content-card memory-card">
+<p class="eyebrow">Your memories · 04</p><h2>A Little <span>Memory Wall</span> 📸</h2>
+<p class="soft">Add your favourite photos here. I've left six spaces for your memories.</p>
+<div class="gallery">
+<div class="photo-slot"><span>📷</span><small>Photo 01</small></div>
+<div class="photo-slot"><span>📷</span><small>Photo 02</small></div>
+<div class="photo-slot"><span>📷</span><small>Photo 03</small></div>
+<div class="photo-slot"><span>📷</span><small>Photo 04</small></div>
+<div class="photo-slot"><span>📷</span><small>Photo 05</small></div>
+<div class="photo-slot"><span>📷</span><small>Photo 06</small></div>
+</div>
+<button class="btn next" data-next="futurePage">More Memories →</button>
+</div></section>
+
+<section class="page" id="futurePage"><div class="card content-card">
+<p class="eyebrow">The year ahead · 05</p><div class="big-emoji">🌟</div>
+<h2>Here's to <span>365 new days.</span></h2>
+<div class="future-list"><p>🌷 More reasons to smile</p><p>✈️ More adventures</p><p>🏆 More victories</p><p>😂 More uncontrollable laughter</p><p>💖 More beautiful memories</p></div>
+<button class="btn next" data-next="finalPage">One Last Thing 💝</button>
+</div></section>
+
+<section class="page" id="finalPage"><div class="card content-card final-card">
+<p class="eyebrow">The final surprise</p><div class="big-emoji">🎁</div>
+<h2>Happy Birthday,<br><span>Priya!</span> 🎂</h2>
+<p>May this new chapter be full of moments that make you stop and think:</p>
+<h3>"Life is actually pretty amazing." ✨</h3>
+<p class="soft">Never forget how loved, valuable and wonderfully unique you are.</p>
+<button class="btn" id="finalBtn">Celebrate! 🎉</button>
+<p id="finalMessage" class="final-message"></p>
+</div></section>
+
+<script src="script.js"></script>
+</body>
+</html>
